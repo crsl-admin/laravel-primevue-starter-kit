@@ -228,7 +228,7 @@ const handleOverlayClick = () => {
                     <Command class="h-4 w-4" />
                 </div>
                 <div v-if="isOpen" class="flex flex-col text-left text-sm leading-tight">
-                    <span class="truncate font-medium">Cambielli</span>
+                    <span class="truncate font-medium">CRSLaghi</span>
                     <span class="truncate text-xs text-muted-color">SPA</span>
                 </div>
             </Link>

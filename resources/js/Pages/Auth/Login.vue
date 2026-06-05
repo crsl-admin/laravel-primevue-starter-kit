@@ -29,10 +29,10 @@ const submit = () => {
         class="flex h-screen items-center justify-center bg-surface-50 px-6 py-20 md:px-20 lg:px-80 dark:bg-surface-950"
     >
         <div
-            class="flex w-full max-w-2xl flex-col items-start gap-8 rounded-3xl bg-surface-0 p-12 shadow-[0px_24px_48px_0px_rgba(0,0,0,0.04)] dark:bg-surface-900"
+            class="flex w-full max-w-md flex-col items-start gap-8 rounded-3xl bg-surface-0 p-12 shadow-[0px_24px_48px_0px_rgba(0,0,0,0.04)] dark:bg-surface-900"
         >
             <div class="flex w-full flex-col items-center gap-6">
-<!--                <img src="/public/logo-cambielli-2.svg" style="height: 5rem" alt="Logo" />-->
+                <img src="/public/logo_crslaghi.svg" style="height: 5rem" alt="Logo" />
                 <h1 class="w-full text-center text-2xl leading-tight font-medium text-surface-900 dark:text-surface-0">
                     Bentornato
                 </h1>
