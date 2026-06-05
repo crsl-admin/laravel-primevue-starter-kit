@@ -16,7 +16,12 @@
     "dependencies": {
         "@inertiajs/vite": "^3.3.1",
         "@inertiajs/vue3": "^3.3.1",
+        "@primeuix/themes": "^2.0.3",
         "@vitejs/plugin-vue": "^6.0.7",
-        "vue": "^3.5.35"
+        "lucide-vue-next": "^1.0.0",
+        "primevue": "^4.5.5",
+        "tailwindcss-primeui": "^0.6.1",
+        "vue": "^3.5.35",
+        "ziggy-js": "^2.6.2"
     }
 }
