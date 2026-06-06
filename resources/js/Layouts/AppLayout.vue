@@ -28,7 +28,7 @@ onMounted(() => {
 
 <template>
     <Head :title="title" />
-    <div class="surface-content min-h-screen">
+    <div class="surface-content min-h-screen bg-surface-0 dark:bg-surface-900">
         <AppSidebar />
         <div
             class="transition-all duration-300"

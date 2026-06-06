@@ -89,7 +89,7 @@ const techStack = [
                     </p>
 
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link :href="'/dashboard'">
+                        <Link :href="route('dashboard')">
                             <Button label="Inizia Ora" icon="pi pi-rocket" size="large" />
                         </Link>
                         <Button label="Documentazione" icon="pi pi-book" size="large" outlined severity="secondary" />

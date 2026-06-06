@@ -210,7 +210,7 @@ const handleOverlayClick = () => {
 
 <template>
     <aside
-        class="fixed inset-y-0 left-0 z-50 flex flex-col transition-transform duration-300 bg-surface-50 dark:bg-surface-800"
+        class="fixed inset-y-0 left-0 z-50 flex flex-col transition-transform duration-300 bg-[#FAFAFA] dark:bg-surface-800"
         :class="{
             'w-64': isOpen,
             'w-0 -translate-x-full': !isOpen,
