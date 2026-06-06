@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue';
 import { BadgeCheck, Bell, ChevronsUpDown, CreditCard, LogOut, Sparkles } from 'lucide-vue-next';
-import BaseAvatar from '@/Components/base/BaseAvatar.vue';
-import BaseMenu from '@/Components/base/BaseMenu.vue';
+import BaseAvatar from '@/Components/base/CAvatar.vue';
+import BaseMenu from '@/Components/base/CMenu.vue';
 import { useSidebar } from '@/Composables/useSidebar';
 import { router, usePage } from '@inertiajs/vue3';
 const page = usePage();

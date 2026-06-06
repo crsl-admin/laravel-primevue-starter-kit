@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { MoreHorizontal, Folder, Forward, Trash2 } from 'lucide-vue-next';
-import BaseMenu from '@/Components/base/BaseMenu.vue';
+import BaseMenu from '@/Components/base/CMenu.vue';
 import { Link } from '@inertiajs/vue3';
 
 const props = defineProps({

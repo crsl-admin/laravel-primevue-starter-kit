@@ -38,33 +38,33 @@ const canManageUsers = computed(() => page.props.auth?.can?.manage_users ?? fals
 const navSettings = computed(() => {
     const items = [
         {
-            title: 'Config. Template',
+            title: 'Impostazioni',
             url: '#',
             icon: Settings2,
             items: [
                 {
                     title: 'Aziende',
-                    url: route('company.index'),
+                    url: '#',
                     routeName: 'company.*',
                 },
                 {
                     title: 'Mansioni',
-                    url: route('job-titles.index'),
+                    url: '#',
                     routeName: 'job-titles.*',
                 },
                 {
                     title: 'Sedi',
-                    url: route('branches.index'),
+                    url: '#',
                     routeName: 'branches.*',
                 },
                 {
                     title: 'Province',
-                    url: route('provinces.index'),
+                    url: '#',
                     routeName: 'provinces.*',
                 },
                 {
                     title: 'Livelli',
-                    url: route('levels.index'),
+                    url: '#',
                     routeName: 'levels.*',
                 },
             ],
@@ -93,7 +93,7 @@ const data = {
         },
         {
             title: 'Contratti',
-            url: route('contracts.index'),
+            url: route('dashboard'),
             icon: SquareTerminal,
             routeName: 'contracts.*',
         },
@@ -178,7 +178,7 @@ const data = {
             icon: Send,
         },*/
     ],
-    /*projects: [
+    projects: [
         {
             name: 'Design Engineering',
             url: '#',
@@ -194,7 +194,7 @@ const data = {
             url: '#',
             icon: Map,
         },
-    ],*/
+    ],
 };
 
 onMounted(() => {
@@ -224,13 +224,7 @@ const handleOverlayClick = () => {
         <!-- Header -->
         <div class="flex h-16 items-center px-4">
             <Link :href="route('dashboard')" v-if="isOpen" class="flex items-center gap-2">
-                <div class="text-primary-foreground flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                    <Command class="h-4 w-4" />
-                </div>
-                <div v-if="isOpen" class="flex flex-col text-left text-sm leading-tight">
-                    <span class="truncate font-medium">CRSLaghi</span>
-                    <span class="truncate text-xs text-muted-color">SPA</span>
-                </div>
+                <img src="/public/logo_crslaghi.svg" alt="Logo" class="h-44 w-44" />
             </Link>
         </div>
 

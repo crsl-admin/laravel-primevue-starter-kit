@@ -1,8 +1,8 @@
 <script setup>
 import { Menu, Moon, Sun } from 'lucide-vue-next';
-import BaseBreadcrumb from '@/Components/base/BaseBreadcrumb.vue';
-import BaseDivider from '@/Components/base/BaseDivider.vue';
-import BaseButton from '@/Components/base/BaseButton.vue';
+import BaseBreadcrumb from '@/Components/base/CBreadcrumb.vue';
+import BaseDivider from '@/Components/base/CDivider.vue';
+import BaseButton from '@/Components/base/CButton.vue';
 import { useSidebar } from '@/Composables/useSidebar';
 import { useDarkMode } from '@/Composables/useDarkMode';
 
