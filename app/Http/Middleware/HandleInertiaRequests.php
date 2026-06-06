@@ -2,7 +2,11 @@
 
 namespace App\Http\Middleware;
 
+use App\Data\UserData;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Auth;
 use Inertia\Middleware;
 
 class HandleInertiaRequests extends Middleware
@@ -37,7 +41,19 @@ class HandleInertiaRequests extends Middleware
     {
         return [
             ...parent::share($request),
-            //
+            'auth' => [
+                'user' => Auth::check() ? UserData::from($request->user()) : null,
+            ],
+            'notification' => $this->notifications($request),
         ];
+    }
+
+    public function notifications(Request $request): Collection
+    {
+        return collect(Arr::only($request->session()->all(), ['success', 'error', 'warning', 'info']))
+            ->mapWithKeys(fn ($notification, $key) => [
+                'type' => $key,
+                'body' => $notification,
+            ]);
     }
 }
