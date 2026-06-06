@@ -15,6 +15,5 @@ class UserData extends Data
         public CarbonImmutable|string|null $email_verified_at,
         public CarbonImmutable|string $createdAt,
         public CarbonImmutable|string $updatedAt,
-    ) {
-    }
+    ) {}
 }
