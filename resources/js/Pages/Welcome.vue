@@ -34,28 +34,28 @@ defineProps({
 const techStack = [
     {
         name: 'Laravel',
-        description: 'Il framework PHP per artigiani del web, potente e scalabile.',
+        description: 'The PHP framework for web artisans, powerful and scalable.',
         icon: Server,
         color: 'text-red-500',
         bg: 'bg-red-500/10'
     },
     {
         name: 'Vue.js',
-        description: 'Framework progressivo per interfacce utente reattive e moderne.',
+        description: 'Progressive framework for building modern, reactive user interfaces.',
         icon: Layers,
         color: 'text-emerald-500',
         bg: 'bg-emerald-500/10'
     },
     {
         name: 'Tailwind CSS',
-        description: 'Utility-first CSS framework per design rapidi e personalizzati.',
+        description: 'Utility-first CSS framework for rapid, custom designs.',
         icon: Palette,
         color: 'text-sky-500',
         bg: 'bg-sky-500/10'
     },
     {
         name: 'PrimeVue',
-        description: 'La libreria di componenti UI più completa per l\'ecosistema Vue.',
+        description: 'The most complete UI component library for the Vue ecosystem.',
         icon: Component,
         color: 'text-primary',
         bg: 'bg-primary/10'
@@ -64,7 +64,7 @@ const techStack = [
 </script>
 
 <template>
-    <AppLayout title="Benvenuto">
+    <AppLayout title="Welcome">
         <div class="p-4 sm:p-8 max-w-7xl mx-auto selection:bg-primary selection:text-white">
             <!-- Hero Section -->
             <section class="relative rounded-3xl overflow-hidden bg-surface-0 dark:bg-surface-900 border border-surface-200 dark:border-surface-800 shadow-sm mb-12 animate-fade-in">
@@ -81,18 +81,17 @@ const techStack = [
                     </div>
 
                     <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 bg-linear-to-br from-surface-900 to-surface-500 dark:from-surface-0 dark:to-surface-400 bg-clip-text text-transparent">
-                        Sviluppo Moderno,<br/>Senza Compromessi.
+                        Modern Development,<br/>Without Compromise.
                     </h1>
 
                     <p class="text-lg text-surface-600 dark:text-surface-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                        Un punto di partenza solido per le tue applicazioni web, integrando le tecnologie più amate dagli sviluppatori in un unico ecosistema armonioso.
+                        A solid foundation for your web applications, integrating the technologies loved by developers into a single, harmonious ecosystem.
                     </p>
 
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link :href="route('dashboard')">
-                            <Button label="Inizia Ora" icon="pi pi-rocket" size="large" />
+                            <Button label="Get Started" icon="pi pi-rocket" size="large" />
                         </Link>
-                        <Button label="Documentazione" icon="pi pi-book" size="large" outlined severity="secondary" />
                     </div>
                 </div>
             </section>
@@ -100,8 +99,8 @@ const techStack = [
             <!-- Tech Stack Grid -->
             <section class="mb-12">
                 <div class="text-center mb-10">
-                    <h2 class="text-2xl font-bold mb-2 text-surface-900 dark:text-surface-0">Potenziato da tecnologie leader</h2>
-                    <p class="text-surface-500 dark:text-surface-400">Architettura moderna pensata per prestazioni e scalabilità.</p>
+                    <h2 class="text-2xl font-bold mb-2 text-surface-900 dark:text-surface-0">Powered by leading technologies</h2>
+                    <p class="text-surface-500 dark:text-surface-400">Modern architecture designed for performance and scalability.</p>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -121,7 +120,7 @@ const techStack = [
             <section class="rounded-3xl bg-surface-0 dark:bg-surface-900 border border-surface-200 dark:border-surface-800 overflow-hidden shadow-sm">
                 <div class="flex flex-col lg:flex-row items-stretch">
                     <div class="flex-1 p-8 sm:p-12">
-                        <h2 class="text-3xl font-bold mb-8 leading-tight text-surface-900 dark:text-surface-0">Perché scegliere questo boilerplate?</h2>
+                        <h2 class="text-3xl font-bold mb-8 leading-tight text-surface-900 dark:text-surface-0">Why choose this boilerplate?</h2>
                         <div class="space-y-8">
                             <div class="flex gap-4">
                                 <div class="mt-1 bg-green-500/10 text-green-500 p-1.5 rounded-lg h-fit">
@@ -129,7 +128,7 @@ const techStack = [
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-surface-900 dark:text-surface-0">Full Stack Perfection</h4>
-                                    <p class="text-surface-500 dark:text-surface-400 text-sm">Inertia.js collega Laravel e Vue senza la complessità delle API REST.</p>
+                                    <p class="text-surface-500 dark:text-surface-400 text-sm">Inertia.js connects Laravel and Vue without the complexity of REST APIs.</p>
                                 </div>
                             </div>
                             <div class="flex gap-4">
@@ -137,8 +136,8 @@ const techStack = [
                                     <CheckCircle2 :size="18" />
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-surface-900 dark:text-surface-0">UI Kit Professionale</h4>
-                                    <p class="text-surface-500 dark:text-surface-400 text-sm">Componenti PrimeVue pronti all'uso e altamente personalizzabili.</p>
+                                    <h4 class="font-bold text-surface-900 dark:text-surface-0">Professional UI Kit</h4>
+                                    <p class="text-surface-500 dark:text-surface-400 text-sm">Ready-to-use PrimeVue components that are highly customizable.</p>
                                 </div>
                             </div>
                             <div class="flex gap-4">
@@ -146,8 +145,8 @@ const techStack = [
                                     <CheckCircle2 :size="18" />
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-surface-900 dark:text-surface-0">Dark Mode Nativa</h4>
-                                    <p class="text-surface-500 dark:text-surface-400 text-sm">Supporto integrato per temi che si adatta alle tue preferenze.</p>
+                                    <h4 class="font-bold text-surface-900 dark:text-surface-0">Native Dark Mode</h4>
+                                    <p class="text-surface-500 dark:text-surface-400 text-sm">Built-in theme support that adapts to your preferences.</p>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +159,7 @@ const techStack = [
 
             <!-- Footer-ish info -->
             <div class="mt-12 py-8 border-t border-surface-200 dark:border-surface-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-surface-400 text-xs">
-                <p>© 2026 CRS Laghi. Tutti i diritti riservati.</p>
+                <p>© 2026 CRS Laghi. All rights reserved.</p>
                 <div class="flex gap-6 uppercase tracking-widest opacity-60">
                     <span>Laravel v{{ laravelVersion }}</span>
                     <span>PHP v{{ phpVersion }}</span>
