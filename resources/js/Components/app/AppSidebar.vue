@@ -43,29 +43,24 @@ const navSettings = computed(() => {
             icon: Settings2,
             items: [
                 {
-                    title: 'Aziende',
+                    title: 'Generale',
                     url: '#',
                     routeName: 'company.*',
                 },
                 {
-                    title: 'Mansioni',
+                    title: 'Team',
                     url: '#',
                     routeName: 'job-titles.*',
                 },
                 {
-                    title: 'Sedi',
+                    title: 'Fatturazione',
                     url: '#',
                     routeName: 'branches.*',
                 },
                 {
-                    title: 'Province',
+                    title: 'Limiti',
                     url: '#',
                     routeName: 'provinces.*',
-                },
-                {
-                    title: 'Livelli',
-                    url: '#',
-                    routeName: 'levels.*',
                 },
             ],
         },
@@ -92,19 +87,19 @@ const data = {
             icon: Command,
         },
         {
-            title: 'Contratti',
-            url: route('dashboard'),
+            title: 'AI',
+            url: '#',
             icon: SquareTerminal,
             routeName: 'contracts.*',
         },
-        /*{
+        {
             title: 'Models',
             url: '#',
             icon: Bot,
             items: [
                 {
                     title: 'Genesis',
-                    url: route('genesis'),
+                    url: '#',
                     routeName: 'genesis',
                 },
                 {
@@ -162,7 +157,7 @@ const data = {
                     url: '#',
                 },
             ],
-        },*/
+        },
     ],
     navSecondary: [
         {

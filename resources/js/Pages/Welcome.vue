@@ -37,27 +37,6 @@ defineProps({
 
 const { isDark, toggleDarkMode } = useDarkMode();
 
-/*const toggleDarkMode = () => {
-    isDark.value = !isDark.value;
-    if (isDark.value) {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-    }
-};*/
-
-onMounted(() => {
-    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        isDark.value = true;
-        document.documentElement.classList.add('dark');
-    } else {
-        isDark.value = false;
-        document.documentElement.classList.remove('dark');
-    }
-});
-
 const techStack = [
     {
         name: 'Laravel',
@@ -91,8 +70,7 @@ const techStack = [
 </script>
 
 <template>
-    <Head title="Welcome" />
-    <AppLayout>
+    <AppLayout title="Dashboard">
         <div class="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 selection:bg-primary selection:text-white">
         <!-- Navigation -->
         <nav class="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md">

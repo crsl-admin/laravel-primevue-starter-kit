@@ -12,4 +12,6 @@ Route::middleware('auth')->group(function () {
             'phpVersion' => PHP_VERSION,
         ]);
     })->name('dashboard');
+
+    require __DIR__.'/settings.php';
 });

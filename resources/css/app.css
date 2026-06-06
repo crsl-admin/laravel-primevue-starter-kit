@@ -34,3 +34,28 @@
         }
     }
 }
+
+@layer utilities {
+    /* Menu hover effect con primary color */
+    .menu-item-hover {
+        transition:
+            background-color 0.2s ease,
+            color 0.2s ease;
+    }
+
+    .menu-item-hover:hover {
+        background-color: color-mix(in srgb, var(--p-primary-color) 10%, transparent);
+    }
+
+    /* Menu active state - più intenso dell'hover */
+    .menu-item-active {
+        background-color: color-mix(in srgb, var(--p-primary-color) 20%, transparent);
+        color: var(--p-primary-color);
+        font-weight: 500;
+    }
+
+    /* Hover su item attivo - ancora più intenso */
+    .menu-item-active:hover {
+        background-color: color-mix(in srgb, var(--p-primary-color) 25%, transparent);
+    }
+}
