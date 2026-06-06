@@ -18,7 +18,7 @@ const { isDark, toggleDarkMode } = useDarkMode();
 </script>
 
 <template>
-    <header class="surface-border surface-sidebar flex h-16 shrink-0 items-center gap-2">
+    <header class="surface-border flex h-16 shrink-0 items-center gap-2 bg-surface-50 dark:bg-surface-800">
         <div class="flex flex-1 items-center gap-2 px-4">
             <BaseButton text rounded @click="toggleSidebar" class="-ml-1 p-2">
                 <template #default>
