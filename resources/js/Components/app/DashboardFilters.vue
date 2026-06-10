@@ -31,13 +31,13 @@ const typeOptions = [
                 v-model="selectedPeriod"
                 :options="periodOptions"
                 placeholder="Seleziona periodo"
-                class="!w-full md:!w-48"
+                class="w-full! md:w-48!"
             />
             <BaseSelect
                 v-model="selectedType"
                 :options="typeOptions"
                 placeholder="Tipo contratto"
-                class="!w-full md:!w-48"
+                class="w-full! md:w-48!"
             />
         </div>
     </div>
