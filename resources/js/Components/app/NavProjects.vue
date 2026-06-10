@@ -77,7 +77,9 @@ const isRouteActive = (item) => {
 
 <template>
     <div class="px-3 py-2">
-        <h2 class="mb-2 px-4 text-xs font-semibold tracking-wider text-muted-color uppercase">Projects</h2>
+        <h2 class="mb-2 px-4 text-xs font-semibold tracking-wider text-muted-color uppercase">
+            Projects
+        </h2>
         <div class="space-y-1">
             <div
                 v-for="(project, index) in projects"

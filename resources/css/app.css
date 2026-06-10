@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-@import "tailwindcss-primeui";
-@import "primeicons/primeicons.css";
+@import 'tailwindcss-primeui';
+@import 'primeicons/primeicons.css';
 
 @variant dark (&:where(.dark, .dark *));
 
@@ -11,7 +11,7 @@
 
 @theme {
     --font-sans: InterVariable, sans-serif;
-    --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
 
     --breakpoint-sm: 640px;
     --breakpoint-md: 768px;

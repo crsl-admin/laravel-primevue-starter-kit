@@ -71,7 +71,9 @@ const getInitials = (name) => {
             />
             <div class="flex flex-1 flex-col text-left">
                 <span class="truncate font-medium">{{ $page.props.auth.user.first_name }}</span>
-                <span class="truncate text-xs text-muted-color">{{ $page.props.auth.user.email }}</span>
+                <span class="truncate text-xs text-muted-color">{{
+                    $page.props.auth.user.email
+                }}</span>
             </div>
             <ChevronsUpDown class="ml-auto h-4 w-4 shrink-0" />
         </button>

@@ -210,7 +210,7 @@ const handleOverlayClick = () => {
 
 <template>
     <aside
-        class="fixed inset-y-0 left-0 z-50 flex flex-col transition-transform duration-300 bg-[#FAFAFA] dark:bg-surface-800"
+        class="fixed inset-y-0 left-0 z-50 flex flex-col bg-[#FAFAFA] transition-transform duration-300 dark:bg-surface-800"
         :class="{
             'w-64': isOpen,
             'w-0 -translate-x-full': !isOpen,
@@ -219,8 +219,16 @@ const handleOverlayClick = () => {
         <!-- Header -->
         <div class="flex h-16 items-center px-4">
             <Link :href="route('dashboard')" v-if="isOpen" class="flex items-center gap-2">
-                <img src="/public/logo_crslaghi.svg" alt="Logo" class="h-12 w-44 invert dark:hidden" />
-                <img src="/public/logo_crslaghi.svg" alt="Logo" class="h-44 w-44 hidden dark:block" />
+                <img
+                    src="/public/logo_crslaghi.svg"
+                    alt="Logo"
+                    class="h-12 w-44 invert dark:hidden"
+                />
+                <img
+                    src="/public/logo_crslaghi.svg"
+                    alt="Logo"
+                    class="hidden h-44 w-44 dark:block"
+                />
             </Link>
         </div>
 
@@ -242,5 +250,9 @@ const handleOverlayClick = () => {
     </aside>
 
     <!-- Mobile Overlay -->
-    <div v-if="isMobile && isOpen" @click="handleOverlayClick" class="fixed inset-0 z-40 bg-black/50 md:hidden" />
+    <div
+        v-if="isMobile && isOpen"
+        @click="handleOverlayClick"
+        class="fixed inset-0 z-40 bg-black/50 md:hidden"
+    />
 </template>

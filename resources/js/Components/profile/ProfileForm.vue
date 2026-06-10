@@ -31,14 +31,21 @@ const updateProfile = () => {
 <template>
     <div class="flex-auto rounded-2xl bg-surface-0 p-8 dark:bg-surface-900">
         <div class="flex flex-col gap-8">
-            <div class="text-lg leading-tight font-semibold text-surface-900 dark:text-surface-0">Profilo</div>
+            <div class="text-lg leading-tight font-semibold text-surface-900 dark:text-surface-0">
+                Profilo
+            </div>
 
             <form class="flex flex-col gap-12" @submit.prevent="updateProfile">
                 <div class="flex flex-col-reverse gap-12 md:flex-row">
                     <div class="flex flex-auto flex-col gap-6">
                         <div class="grid grid-cols-12 gap-7">
                             <div class="col-span-12 flex flex-col gap-2 md:col-span-6">
-                                <label for="first_name" class="text-surface-900 dark:text-surface-0"> Nome </label>
+                                <label
+                                    for="first_name"
+                                    class="text-surface-900 dark:text-surface-0"
+                                >
+                                    Nome
+                                </label>
                                 <InputText
                                     id="first_name"
                                     v-model="form.first_name"
@@ -52,7 +59,9 @@ const updateProfile = () => {
                             </div>
 
                             <div class="col-span-12 flex flex-col gap-2 md:col-span-6">
-                                <label for="last_name" class="text-surface-900 dark:text-surface-0"> Cognome </label>
+                                <label for="last_name" class="text-surface-900 dark:text-surface-0">
+                                    Cognome
+                                </label>
                                 <InputText
                                     id="last_name"
                                     v-model="form.last_name"
@@ -67,7 +76,9 @@ const updateProfile = () => {
                         </div>
 
                         <div class="flex flex-col gap-2">
-                            <label for="email" class="text-surface-900 dark:text-surface-0"> E-mail </label>
+                            <label for="email" class="text-surface-900 dark:text-surface-0">
+                                E-mail
+                            </label>
                             <InputText
                                 id="email"
                                 v-model="form.email"
@@ -147,7 +158,12 @@ const updateProfile = () => {
                 </div>
 
                 <div>
-                    <Button label="Aggiorna" type="submit" :disabled="form.processing" :loading="form.processing" />
+                    <Button
+                        label="Aggiorna"
+                        type="submit"
+                        :disabled="form.processing"
+                        :loading="form.processing"
+                    />
                 </div>
             </form>
         </div>

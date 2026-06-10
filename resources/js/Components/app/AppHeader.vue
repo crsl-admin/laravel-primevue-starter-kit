@@ -18,7 +18,9 @@ const { isDark, toggleDarkMode } = useDarkMode();
 </script>
 
 <template>
-    <header class="flex h-16 shrink-0 items-center gap-2 border-b border-b-[#e5e5e5] dark:border-b-[#2A2A2A] dark:bg-surface-800">
+    <header
+        class="flex h-16 shrink-0 items-center gap-2 border-b border-b-[#e5e5e5] dark:border-b-[#2A2A2A] dark:bg-surface-800"
+    >
         <div class="flex flex-1 items-center gap-2 px-4">
             <BaseButton text rounded @click="toggleSidebar" class="-ml-1 p-2">
                 <template #default>
@@ -28,7 +30,11 @@ const { isDark, toggleDarkMode } = useDarkMode();
 
             <BaseDivider layout="vertical" class="mx-2 h-4" />
 
-            <BaseBreadcrumb v-if="breadcrumbItems.length" :items="breadcrumbItems" class="hidden md:flex" />
+            <BaseBreadcrumb
+                v-if="breadcrumbItems.length"
+                :items="breadcrumbItems"
+                class="hidden md:flex"
+            />
         </div>
 
         <!-- Dark Mode Toggle -->

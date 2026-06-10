@@ -1,4 +1,4 @@
-import {createInertiaApp} from "@inertiajs/vue3";
+import { createInertiaApp } from '@inertiajs/vue3';
 import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
 import { definePreset } from '@primeuix/themes';
@@ -35,8 +35,8 @@ const defaultPreset = definePreset(Aura, {
                     700: '{stone.700}',
                     800: '{stone.800}',
                     900: '{stone.900}',
-                    950: '{stone.950}'
-                }
+                    950: '{stone.950}',
+                },
             },
             dark: {
                 surface: {
@@ -51,10 +51,10 @@ const defaultPreset = definePreset(Aura, {
                     700: '{neutral.700}',
                     800: '{neutral.800}',
                     900: '{neutral.900}',
-                    950: '{neutral.950}'
-                }
-            }
-        }
+                    950: '{neutral.950}',
+                },
+            },
+        },
     },
 });
 

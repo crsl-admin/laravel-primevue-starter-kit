@@ -33,7 +33,9 @@ const submit = () => {
         >
             <div class="flex w-full flex-col items-center gap-6">
                 <img src="/public/logo_crslaghi.svg" style="height: 5rem" alt="Logo" />
-                <h1 class="w-full text-center text-2xl leading-tight font-medium text-surface-900 dark:text-surface-0">
+                <h1
+                    class="w-full text-center text-2xl leading-tight font-medium text-surface-900 dark:text-surface-0"
+                >
                     Bentornato
                 </h1>
             </div>
@@ -56,7 +58,9 @@ const submit = () => {
             </Message>
             <form class="flex w-full flex-col gap-6" @submit.prevent="submit">
                 <div class="flex flex-col gap-2">
-                    <label for="email" class="font-medium text-surface-900 dark:text-surface-0">Email</label>
+                    <label for="email" class="font-medium text-surface-900 dark:text-surface-0"
+                        >Email</label
+                    >
                     <InputText
                         id="email"
                         v-model="form.email"
@@ -66,7 +70,9 @@ const submit = () => {
                     />
                 </div>
                 <div class="flex flex-col gap-2">
-                    <label for="password" class="font-medium text-surface-900 dark:text-surface-0">Password</label>
+                    <label for="password" class="font-medium text-surface-900 dark:text-surface-0"
+                        >Password</label
+                    >
                     <Password
                         id="password"
                         v-model="form.password"
@@ -82,7 +88,9 @@ const submit = () => {
                 >
                     <div class="flex items-center gap-2">
                         <Checkbox id="rememberme1" v-model="form.remember" :binary="true" />
-                        <label for="rememberme1" class="leading-normal text-surface-900 dark:text-surface-0"
+                        <label
+                            for="rememberme1"
+                            class="leading-normal text-surface-900 dark:text-surface-0"
                             >Remember me</label
                         >
                     </div>
@@ -121,12 +129,15 @@ const submit = () => {
             <div class="flex flex-col gap-6">
                 <div class="flex items-start gap-4">
                     <div class="flex flex-1 flex-col gap-2">
-                        <h1 class="m-0 text-xl leading-normal font-semibold text-surface-900 dark:text-surface-0">
+                        <h1
+                            class="m-0 text-xl leading-normal font-semibold text-surface-900 dark:text-surface-0"
+                        >
                             Recupero Password
                         </h1>
-                        <span class="text-base leading-normal text-surface-500 dark:text-surface-400"
-                            >Inserisci la tua mail utilizzata per accedere all'account. Se fai il login con Micosoft 365
-                            non potrai recuperare la password.</span
+                        <span
+                            class="text-base leading-normal text-surface-500 dark:text-surface-400"
+                            >Inserisci la tua mail utilizzata per accedere all'account. Se fai il
+                            login con Micosoft 365 non potrai recuperare la password.</span
                         >
                     </div>
                     <Button
@@ -144,7 +155,12 @@ const submit = () => {
                         <label for="email" class="text-base text-color">E-mail</label>
                         <IconField icon-position="left" class="w-full">
                             <InputIcon class="pi pi-envelope" />
-                            <InputText id="email" v-model="email" placeholder="Email" class="w-full" />
+                            <InputText
+                                id="email"
+                                v-model="email"
+                                placeholder="Email"
+                                class="w-full"
+                            />
                         </IconField>
                     </div>
                 </div>

@@ -50,7 +50,9 @@ const updatePassword = () => {
                     </div>
 
                     <div class="flex flex-col gap-2">
-                        <label for="password" class="text-surface-900 dark:text-surface-0"> Nuova Password </label>
+                        <label for="password" class="text-surface-900 dark:text-surface-0">
+                            Nuova Password
+                        </label>
                         <Password
                             fluid
                             id="password"
@@ -69,7 +71,10 @@ const updatePassword = () => {
                     </div>
 
                     <div class="flex flex-col gap-2">
-                        <label for="password_confirmation" class="text-surface-900 dark:text-surface-0">
+                        <label
+                            for="password_confirmation"
+                            class="text-surface-900 dark:text-surface-0"
+                        >
                             Conferma Nuova Password
                         </label>
                         <Password

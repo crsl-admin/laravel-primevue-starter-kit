@@ -30,6 +30,12 @@ const chartRef = ref(null);
 
 <template>
     <div class="w-full">
-        <Chart ref="chartRef" :type="type" :data="data" :options="options" :style="{ height: height + 'px' }" />
+        <Chart
+            ref="chartRef"
+            :type="type"
+            :data="data"
+            :options="options"
+            :style="{ height: height + 'px' }"
+        />
     </div>
 </template>

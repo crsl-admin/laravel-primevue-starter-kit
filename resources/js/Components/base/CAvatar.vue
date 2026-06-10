@@ -28,5 +28,12 @@ defineProps({
 </script>
 
 <template>
-    <Avatar :image="image" :label="label" :icon="icon" :size="size" :shape="shape" class="transition-colors" />
+    <Avatar
+        :image="image"
+        :label="label"
+        :icon="icon"
+        :size="size"
+        :shape="shape"
+        class="transition-colors"
+    />
 </template>

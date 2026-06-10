@@ -37,7 +37,8 @@ const navigateToTab = (routeName) => {
             class="-ml-0.5 border-l-2 transition-colors"
             :class="{
                 'border-primary': currentTab === tab.key,
-                'border-surface-200 hover:border-primary dark:border-surface-700': currentTab !== tab.key,
+                'border-surface-200 hover:border-primary dark:border-surface-700':
+                    currentTab !== tab.key,
             }"
         >
             <Link
@@ -45,7 +46,8 @@ const navigateToTab = (routeName) => {
                 class="flex cursor-pointer items-center px-4 py-3 font-medium transition-colors"
                 :class="{
                     'text-primary': currentTab === tab.key,
-                    'text-surface-700 hover:text-primary dark:text-surface-200': currentTab !== tab.key,
+                    'text-surface-700 hover:text-primary dark:text-surface-200':
+                        currentTab !== tab.key,
                 }"
             >
                 <i :class="[tab.icon, 'mr-2', 'text-base!', 'leading-normal!']" />
@@ -64,10 +66,14 @@ const navigateToTab = (routeName) => {
                     class="relative px-4 py-3 transition-colors"
                     :class="{
                         'text-primary': currentTab === tab.key,
-                        'text-surface-700 hover:text-primary dark:text-surface-200': currentTab !== tab.key,
+                        'text-surface-700 hover:text-primary dark:text-surface-200':
+                            currentTab !== tab.key,
                     }"
                 >
-                    <a @click="navigateToTab(tab.route)" class="flex cursor-pointer items-center font-medium">
+                    <a
+                        @click="navigateToTab(tab.route)"
+                        class="flex cursor-pointer items-center font-medium"
+                    >
                         <i :class="[tab.icon, 'mr-2', 'text-base!', 'leading-normal!']" />
                         <span>{{ tab.name }}</span>
                     </a>

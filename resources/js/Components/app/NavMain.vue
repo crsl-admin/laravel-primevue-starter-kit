@@ -110,7 +110,10 @@ onMounted(() => {
                         :class="{ 'rotate-90': isExpanded(item.title) }"
                     />
                 </component>
-                <div v-if="item.items && item.items.length && isExpanded(item.title)" class="mt-1 ml-4 space-y-1 pl-4">
+                <div
+                    v-if="item.items && item.items.length && isExpanded(item.title)"
+                    class="mt-1 ml-4 space-y-1 pl-4"
+                >
                     <component
                         :is="subItem.inertia === false ? 'a' : Link"
                         v-for="subItem in item.items"

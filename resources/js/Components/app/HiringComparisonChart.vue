@@ -60,7 +60,9 @@ const chartOptions = ref({
 <template>
     <BaseCard class="h-full">
         <div class="mb-4">
-            <h3 class="text-lg font-semibold text-surface-900 dark:text-surface-0">Confronto Assunzioni</h3>
+            <h3 class="text-lg font-semibold text-surface-900 dark:text-surface-0">
+                Confronto Assunzioni
+            </h3>
             <p class="text-sm text-surface-500 dark:text-surface-400">
                 Numero di assunti mensili comparato con l'anno precedente
             </p>
