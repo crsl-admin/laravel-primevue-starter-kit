@@ -17,24 +17,19 @@ class AuthController extends Controller
         return inertia('Auth/Login');
     }
 
-    public function recover()
+    /*public function recover()
     {
         return inertia()->modal('Auth/Recover')
             ->baseRoute('auth.login');
-    }
+    }*/
 
-    public function reset(Request $request)
+    /*public function reset(Request $request)
     {
-        /*return inertia()->render('Auth/LoginOld', [
-            'token' => $request->token,
-            'email' => $request->email,
-        ]);*/
-
         return inertia()->modal('Auth/Reset')
             ->with([
                 'token' => $request->token,
                 'email' => $request->email,
             ])
             ->baseRoute('auth.login');
-    }
+    }*/
 }
